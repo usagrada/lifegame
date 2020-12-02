@@ -12,6 +12,7 @@ header{
 }
 
 main {
+    font-family: "Noto Sans JP";
     padding-left: 10px;
     padding-right: 10px;
     background-color: honeydew;
