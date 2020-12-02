@@ -1,0 +1,39 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("./image/backgroundImg.jpg");
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+}
+
+header{
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: honeydew;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.movie-wrap {
+    position: relative;
+    padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+    height: 0;
+    overflow: hidden;
+}
+
+.movie-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10%;
+    width: 80%;
+    height: 80%;
+}

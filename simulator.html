@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://usagrada.github.io/lifegame/simulator.html" />
+  <meta property="og:title" content="Life Game Simulator" />
+  <meta property="og:description" content="Life Gameをシミュレーションできるサイトです。" />
+  <title>Life Game Simulator</title>
+  <link rel="stylesheet" href="simulation.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Life Game Simulator</h1>
+  </header>
+  <main>
+    <div>
+      <p>シミュレーションPageです。</p>
+      <a href="./index.html">Top Pageへ</a>
+    </div>
+    <div id="simulationController">
+      <!-- ここにSimulationを制御するボタンなどを作成します -->
+      <div>
+        <button id="simulationStart">Simulation Start</button>
+        <button id="simulationStop">Simulation Stop</button>
+        <button id="resetMap">reset</button>
+      </div>
+      <div id="simulationState">
+        待機中
+      </div>
+      <div>
+        <div>
+          <label for="size">size</label>
+          <input type="number" name="size" id="sizeChange" min="4" max="50" placeholder="simulationのsize" value="8">
+
+          <label for="size">simulation回数</label>
+          <input type="number" name="times" id="simulationTimes" min="10" max="1000" placeholder="simulation回数"
+            value="100">
+        </div>
+        <div id="input-error"></div>
+      </div>
+    </div>
+    <div id="simulationArea">
+      <!-- ここにたくさんのBlockを生成します -->
+    </div>
+    <div>
+      <button id="create-glider">Glider</button>
+    </div>
+  </main>
+  <script src="simulation.js"></script>
+</body>
+
+</html>

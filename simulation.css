@@ -1,0 +1,61 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("./image/backgroundImg.jpg");
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+}
+
+header{
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    background-color: honeydew;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+#simulationController {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#sizeChange {
+    width: 80px;
+}
+
+.column {
+    font-size: 0px;
+}
+
+.field {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    background-image: url("./image/death.jpg");
+    background-size: contain;
+    /* background-color: antiquewhite; */
+    border: black 1px solid;
+    display: inline-block;
+}
+
+.field-min {
+    background-image: url("./image/death.jpg");
+    background-size: contain;
+    display: inline-block;
+}
+
+.alive {
+    background-image: url("./image/alive.jpg");
+    background-size: contain;
+    /* background-color: greenyellow; */
+}
